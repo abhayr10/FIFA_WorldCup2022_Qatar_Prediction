@@ -39,6 +39,6 @@ fifa = [get_all_wc_matches(year) for year in years]
 df_fifa = pd.concat(fifa,ignore_index=True)
 df_fifa.to_csv('all_fifa_wc_resultsdata.csv',index=False)
 
-# 2022 World Cups Fixtures
+# 2022 World Cups All Fixtures
 df_fixtures = get_all_wc_matches(2022)
 df_fixtures.to_csv('2022fifa_wc_fixtures.csv', index=False)
